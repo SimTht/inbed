@@ -1,10 +1,10 @@
-import "./App.css";
-import Header from "./components/Header.jxs";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import RentList from "./pages/RentList.jsx";
-import InfoContact from "./pages/InfoContact.jsx";
-import AboutUs from "./pages/AboutUs.jsx";
+import "./App.css";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import RentList from "./pages/RentList";
+import InfoContact from "./pages/InfoContact";
+import AboutUs from "./pages/AboutUs";
 import Footer from "./components/Footer";
 
 function App() {

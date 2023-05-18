@@ -1,4 +1,46 @@
 header {
+  padding: 0.5rem 1rem;
   display: flex;
+  flex-direction: row;
   height: 5rem;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+header * {
+  max-height: 5rem;
+}
+
+.header-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header {
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-list-item > * {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-list-item:hover * {
+  color: var(--text-4);
 }
