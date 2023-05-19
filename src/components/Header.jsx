@@ -7,7 +7,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <header>
-      <div className="container header-wrap">
+      <div className="container">
         <Link to="/">
           <img src={logo} className="logo-header" alt="logo" />
         </Link>
@@ -29,7 +29,12 @@ const Header = () => {
           </li>
         </ul>
 
-        <a href="www.google.com" className="btn landlord-portal">
+        <a
+          href="https://www.google.com"
+          className="btn landlord-portal"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Espace propriétaire
         </a>
       </div>

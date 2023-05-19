@@ -16,13 +16,6 @@ header * {
   max-height: 5rem;
 }
 
-.header-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo-header {
   height: 2.5rem;
   margin-right: 1rem;
