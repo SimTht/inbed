@@ -28,6 +28,13 @@ h1 {
   line-height: 1.2;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 h3 {
   font-size: 1.75rem;
   margin-bottom: 0.5rem;

@@ -76,15 +76,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="container location-section">
-        <div>
-          <div>
-            <h2>Nos Locations</h2>
-            <p>Découvrez notre selection du moment</p>
+      <section className="location-section">
+        <div className="container">
+          <div className="location-section-top">
+            <div>
+              <h2>Nos Locations</h2>
+              <p>Découvrez notre selection du moment</p>
+            </div>
+            <Link to="/rentals">Découvrir toutes nos locations</Link>
           </div>
-          <Link to="/rentals">Découvrir toutes nos locations</Link>
+          <div className="rent-selection">Rent selection</div>
         </div>
-        <div className="rent-selection">Rent selection</div>
       </section>
     </div>
   );

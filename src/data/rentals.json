@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Le boudoir d'Adélaïs",
+    "city": "Amboise",
+    "price": [57, 75],
+    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
+    "people": [2, 4],
+    "rooms": 1,
+    "bathrooms": 1,
+    "images": [
+      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Le boudoir d'Adélaïs",
+    "city": "Amboise",
+    "price": [57, 75],
+    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
+    "people": [2, 4],
+    "rooms": 1,
+    "bathrooms": 1,
+    "images": [
+      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Le boudoir d'Adélaïs",
+    "city": "Amboise",
+    "price": [57, 75],
+    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
+    "people": [2, 4],
+    "rooms": 1,
+    "bathrooms": 1,
+    "images": [
+      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Le boudoir d'Adélaïs",
+    "city": "Amboise",
+    "price": [57, 75],
+    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
+    "people": [2, 4],
+    "rooms": 1,
+    "bathrooms": 1,
+    "images": [
+      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
+    ]
+  }
+]
