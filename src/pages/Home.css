@@ -97,13 +97,13 @@
 }
 
 .location-section-top {
+  margin-bottom: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .location-section-top a {
-  margin-bottom: 2.5rem;
   color: var(--text-2);
   cursor: pointer;
 }

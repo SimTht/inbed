@@ -7,6 +7,9 @@ import carouselOne from "../assets/carroussel-1.jpg";
 import carouselTwo from "../assets/carroussel-2.jpg";
 import carouselThree from "../assets/carroussel-3.jpg";
 import carouselFour from "../assets/carroussel-4.jpg";
+import RentCard from "../components/RentCard";
+
+import rents from "../data/rentals.json";
 
 const Home = () => {
   return (
@@ -85,7 +88,9 @@ const Home = () => {
             </div>
             <Link to="/rentals">Découvrir toutes nos locations</Link>
           </div>
-          <div className="rent-selection">Rent selection</div>
+          <div className="rent-selection">
+            <RentCard rent={rents[0]} />
+          </div>
         </div>
       </section>
     </div>
