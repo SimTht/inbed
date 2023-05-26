@@ -106,4 +106,14 @@
 .location-section-top a {
   color: var(--text-2);
   cursor: pointer;
+  text-decoration: none;
+}
+
+.location-section-top a:hover {
+  text-decoration: underline;
+}
+
+.rent-selection {
+  width: 450px;
+  height: 520px;
 }
