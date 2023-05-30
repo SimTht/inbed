@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RentCard from "../components/RentCard";
+import TopRates from "../components/TopRates";
 
 import "./Home.css";
 
@@ -7,9 +9,9 @@ import carouselOne from "../assets/carroussel-1.jpg";
 import carouselTwo from "../assets/carroussel-2.jpg";
 import carouselThree from "../assets/carroussel-3.jpg";
 import carouselFour from "../assets/carroussel-4.jpg";
-import RentCard from "../components/RentCard";
 
 import rents from "../data/rentals.json";
+import reviews from "../data/reviews.json";
 
 const Home = () => {
   return (
@@ -89,9 +91,16 @@ const Home = () => {
             <Link to="/rentals">Découvrir toutes nos locations</Link>
           </div>
           <div className="rent-selection">
-            <RentCard rent={rents[0]} />
+            {rents.map((rent) => (
+              <div className="selection-card-container" key={rent.id}>
+                <RentCard rent={rent} />
+              </div>
+            ))}
           </div>
         </div>
+      </section>
+      <section className="top-rate">
+        <TopRates />
       </section>
     </div>
   );
