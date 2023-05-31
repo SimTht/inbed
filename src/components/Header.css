@@ -1,7 +1,6 @@
 header {
   padding: 0.5rem 1rem;
   display: flex;
-  flex-direction: row;
   height: 5rem;
   justify-content: center;
 
@@ -22,6 +21,16 @@ header div {
   align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    height: 3.5rem;
+  }
+
+  header .container {
+    justify-content: space-between;
+  }
+}
+
 header * {
   max-height: 5rem;
 }
@@ -39,6 +48,12 @@ header * {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 .nav-list-item > * {
   color: var(--text-1);
   text-decoration: none;
@@ -47,4 +62,14 @@ header * {
 
 .nav-list-item:hover * {
   color: var(--text-4);
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .burger-menu {
+    display: initial;
+  }
 }

@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo-header.png";
 
 import "./Header.css";
+
+import logo from "../assets/logo-header.png";
+import burgerLogo from "../assets/burger-logo.svg";
 
 const Header = () => {
   return (
@@ -28,6 +30,10 @@ const Header = () => {
             <Link to="/about">Qui sommes nous ?</Link>
           </li>
         </ul>
+
+        <div className="burger-menu">
+          <img src={burgerLogo} alt="burger_menu_logo" />
+        </div>
 
         <a
           href="https://www.google.com"

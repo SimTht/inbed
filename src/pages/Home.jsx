@@ -15,7 +15,8 @@ import reviews from "../data/reviews.json";
 
 const Home = () => {
   return (
-    <div className="home">
+    <main>
+      <div></div>
       <div
         className="carousel-container"
         style={{
@@ -102,7 +103,7 @@ const Home = () => {
       <section className="top-rate">
         <TopRates />
       </section>
-    </div>
+    </main>
   );
 };
 
