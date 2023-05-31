@@ -53,8 +53,21 @@ const Footer = () => {
       <div className="container footer-2">
         <small className="petites-lignes">
           © 2021 www.inbed.fr. Tous droits réservés.{" "}
-          <a href="">Mentions légales</a>.{" "}
-          <a href="">Politique de confidentialité</a>.
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vQW-xkOsJpgQm6oNTLoA9TJZ2t4pXYiT1Nwpj1kFrbR9NnfPcFpqCIhYjEqHwfglgFgcW4eaCqTkPBQ/pub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mentions légales
+          </a>
+          <a
+            href="https://www.bookingsync.com/fr/my/14309/privacy_policy?_ga=2.128869900.1884600497.1601277622-189257610.1600861574"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Politique de confidentialité
+          </a>
+          .
         </small>
         <div className="social-network">
           <a
