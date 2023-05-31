@@ -19,7 +19,13 @@ const Header = () => {
             <Link to="/">Acceuil</Link>
           </li>
           <li className="nav-list-item">
-            <Link to="/rentals">Nos Location</Link>
+            <a
+              href="https://www.airbnb.fr/users/479186120/listings"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nos Locations
+            </a>
           </li>
 
           <li className="nav-list-item">
@@ -36,7 +42,7 @@ const Header = () => {
         </div>
 
         <a
-          href="https://www.google.com"
+          href="https://app.superhote.com/#/login"
           className="btn landlord-portal"
           target="_blank"
           rel="noopener noreferrer"

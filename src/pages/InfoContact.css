@@ -1,0 +1,70 @@
+.info-contact-title {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .info-contact-title {
+    margin-top: 3.5rem;
+  }
+}
+
+.info-contact-intro div {
+  display: flex;
+  margin: auto;
+}
+
+.info-contact-intro .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.info-contact-intro .left div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info-contact-intro img {
+  padding: 0 1rem;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.info-contact-prestations {
+  display: flex;
+  justify-content: center;
+}
+
+.info-contact-price {
+  display: flex;
+}
+
+.info-contact-price img {
+  padding: 0 1rem;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.info-contact-price div {
+  width: 40%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.info-contact-price p {
+  margin-bottom: 1rem;
+}
+
+.commission {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--color-3);
+}
