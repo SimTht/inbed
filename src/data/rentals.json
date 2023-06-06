@@ -1,51 +1,45 @@
 [
   {
     "id": 1,
-    "name": "Le boudoir d'Adélaïs",
+    "name": "La maison Bretonneau",
     "city": "Amboise",
-    "price": [57, 75],
-    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
-    "people": [2, 4],
-    "rooms": 1,
-    "bathrooms": 1,
-    "images": [
-      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
-    ]
+    "price": [65, 200],
+    "short": "Pour un voyage d’affaires ou pour un séjour touristique, notre maison a été entièrement pensée pour un confort absolu. Elle est parfaitement adaptée pour quatre personnes.",
+    "people": 4,
+    "rooms": 2,
+    "bathrooms": 2,
+    "images": [""]
   },
   {
     "id": 2,
-    "name": "Le boudoir d'Adélaïs",
-    "city": "Amboise",
-    "price": [57, 75],
-    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
-    "people": [2, 4],
-    "rooms": 1,
-    "bathrooms": 1,
-    "images": [
-      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
-    ]
+    "name": "La seigneurie les Aulnaies",
+    "city": "Fondettes",
+    "price": [250, 800],
+    "short": "Au coeur de la propriété de plus de 3 hectares vous profiterez en famille ou entre amis d'un calme absolu loin de toutes nuisances.",
+    "people": 14,
+    "rooms": 6,
+    "bathrooms": 6,
+    "images": [""]
   },
   {
     "id": 3,
-    "name": "Le boudoir d'Adélaïs",
-    "city": "Amboise",
-    "price": [57, 75],
-    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
-    "people": [2, 4],
-    "rooms": 1,
+    "name": "T1 Bis de caractère avec mezzanine dans le Vieux Tours",
+    "city": "Tours",
+    "price": [40, 130],
+    "short": "Bel Appartement de 45 m2, avec belle pièce de 40m2, hauteur de 3m50, pierres apparentes et poutres, salon& salle à manger, chambre en retrait sous la mezzanine, avec lit 160, kitchenette, mezzanine avec lit double, salle de bain et WC indépendant ... ",
+    "people": 4,
+    "rooms": 1.5,
     "bathrooms": 1,
-    "images": [
-      "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
-    ]
+    "images": [""]
   },
   {
     "id": 4,
-    "name": "Le boudoir d'Adélaïs",
-    "city": "Amboise",
-    "price": [57, 75],
-    "short": "Bienvenue dans le boudoir d'Adélaïs, première propriétaire du chateau d'Amboise",
-    "people": [2, 4],
-    "rooms": 1,
+    "name": "Superbe duplex proche des Halles de Tours",
+    "city": "Tours",
+    "price": [110, 320],
+    "short": "Appartement distingué, proche du centre de Tours. Idéal pour un séjour de standing pour 3 couples, une grande famille ou des professionnels. Entrez dans un magnifique décor dans notre duplex aménagé avec goût. Vous ne manquerez de rien, tout le confort est présent. Si vous souhaitez un environnement d’exception pour votre voyage, voilà l’appartement qu’il vous faut!",
+    "people": 6,
+    "rooms": 3,
     "bathrooms": 1,
     "images": [
       "https://res-5.cloudinary.com/bookingsync/image/upload/c_fill,f_auto,fl_progressive,g_center,h_1024,q_auto,w_1536/v1601476819/2w2x_482019a6-2b40-4f34-8b08-c2e0ae01c671.jpg"
