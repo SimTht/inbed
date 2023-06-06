@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
 
 import "./InfoContact.css";
 
@@ -141,11 +142,11 @@ const InfoContact = () => {
             <strong>Combien ça coûte ?</strong>
           </h4>
           <span className="commission">20%</span>
-          <p>
+          <p id="text-commission">
             de commission sur les loyers perçus + les frais de ménage payés par
             les voyageurs.
           </p>
-          <u>Exemple de revenu</u>
+          <u>Exemple de revenu :</u>
           <p>
             Un voyageur réserve votre logement pour 3 nuits à 100€/nuit soit un
             total de 300€. À ce tarif vont s’ajouter les 50€ de frais de ménage.
@@ -172,7 +173,30 @@ const InfoContact = () => {
             Chenonceaux, Chargé, Mosnes ainsi que Chaumont-Sur-Loire.
           </p>
         </div>
-        <h2></h2>
+        <h2 className="container">
+          Demandez <strong>gratuitement</strong> votre estimation de revenus
+          locatifs
+        </h2>
+        <div className="contact-form-container container">
+          <div>
+            <h3>Adresse</h3>
+            <p>
+              4 chemin des bruyères
+              <br />
+              37270 ATHEE SUR CHER
+              <br />
+              Indre et Loire
+              <br />
+              France
+            </p>
+            <h3>Téléphone</h3>
+            <p>+33629755521</p>
+            <p>+33664811175</p>
+            <h3>Email</h3>
+            <p>contact@inbed.fr</p>
+          </div>
+          <ContactForm />
+        </div>
       </section>
     </main>
   );
