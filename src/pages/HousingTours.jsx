@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./Housing.css";
+import "./HousingTours.css";
 
 const HousingTours = () => {
-  return <div>HousingTours</div>;
+  return <main>HousingTours</main>;
 };
 
 export default HousingTours;

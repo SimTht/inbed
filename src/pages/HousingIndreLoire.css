@@ -1,0 +1,35 @@
+.indreetloire-container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.indreetloire-container h2 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.indreetloire-container h3 {
+  text-align: left;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.indreetloire-container p {
+  margin-bottom: 1rem;
+}
+
+.indreetloire-container a {
+  text-decoration: none;
+  color: var(--text-4);
+}
+
+.indreetloire-container .btn {
+  color: var(--text-3);
+}
+
+.indreetloire-container img {
+  margin-bottom: 1rem;
+}

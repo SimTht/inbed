@@ -7,6 +7,10 @@ footer {
   color: var(--text-3);
 }
 
+footer section {
+  width: 30%;
+}
+
 .footer-1 {
   display: flex;
   justify-content: space-between;
@@ -21,6 +25,21 @@ footer {
 
 .footer-contact p {
   margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-1);
+}
+
+.footer-links a {
+  text-decoration: unset;
+  color: var(--main-1);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 .footer-2 {

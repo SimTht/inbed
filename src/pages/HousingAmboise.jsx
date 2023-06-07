@@ -3,7 +3,7 @@ import React from "react";
 import "./HousingAmboise.css";
 
 const HousingAmboise = () => {
-  return <div>HousingAmboise</div>;
+  return <main>HousingAmboise</main>;
 };
 
 export default HousingAmboise;

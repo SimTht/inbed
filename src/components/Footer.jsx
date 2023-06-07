@@ -17,7 +17,7 @@ const Footer = () => {
             Envoyer un message
           </Link>
         </section>
-        <section className="footer-adress">
+        <section className="footer-adresse">
           <h4>Adresse</h4>
           <div>
             <p>
@@ -48,6 +48,18 @@ const Footer = () => {
             </ul>
           </div>
           <p></p>
+        </section>
+        <section className="footer-links">
+          <Link to="/indreetloire">
+            Conciergerie Airbnb Tours et Amboise (37)
+          </Link>
+          <Link to="/tours">
+            Conciergerie Airbnb à Tours en Indre-et-Loire (37)
+          </Link>
+          <Link to="/amboise">
+            Conciergerie Airbnb à Amboise en Indre-et-Loire (37)
+          </Link>
+          <Link to="/faq">F.A.Q (Foire Aux Questions)</Link>
         </section>
       </div>
       <div className="container footer-2">

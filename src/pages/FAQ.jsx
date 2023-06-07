@@ -3,7 +3,7 @@ import React from "react";
 import "./FAQ.css";
 
 const FAQ = () => {
-  return <div>FAQ</div>;
+  return <main>FAQ</main>;
 };
 
 export default FAQ;
