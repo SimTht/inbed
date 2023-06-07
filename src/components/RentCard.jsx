@@ -42,9 +42,7 @@ const RentCard = ({ rent }) => {
               </g>
             </svg>
           </i>
-          <span>
-            {rent.people[0]}-{rent.people[1]}
-          </span>
+          <span>{rent.people}</span>
         </div>
         <div>
           <i>

@@ -1,35 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import RentCard from "../components/RentCard";
 import TopRates from "../components/TopRates";
 
 import "./Home.css";
 
-import carouselOne from "../assets/carroussel-1.jpg";
-import carouselTwo from "../assets/carroussel-2.jpg";
-import carouselThree from "../assets/carroussel-3.jpg";
-import carouselFour from "../assets/carroussel-4.jpg";
-
+import carrousel1 from "../assets/carrousel/1.webp";
+import carrousel2 from "../assets/carrousel/2.webp";
+import carrousel3 from "../assets/carrousel/3.webp";
+import carrousel4 from "../assets/carrousel/4.webp";
 import rents from "../data/rentals.json";
-import reviews from "../data/reviews.json";
 
 const Home = () => {
+  const carrouselPaths = [carrousel1, carrousel2, carrousel3, carrousel4];
+  const [currentCarrouselIndex, setCurrentCarrouselIndex] = useState(0);
+  const activeCarrouselStyle = { opacity: "0" };
+
+  useEffect(() => {
+    const timeout = setInterval(() => {
+      setCurrentCarrouselIndex(
+        (prevIndex) => (prevIndex + 1) % carrouselPaths.length
+      );
+    }, 5000);
+
+    return () => clearTimeout(timeout);
+  }, [currentCarrouselIndex]);
+
   return (
     <main>
       <div></div>
-      <div
-        className="carousel-container"
-        style={{
-          backgroundImage: `url(${carouselFour})`,
-        }}
-      >
+      <div className="carrousel-container">
+        {carrouselPaths.map((carrouselPath, index) => (
+          <div
+            className="carousel-item"
+            style={{
+              backgroundImage: `url(${carrouselPath})`,
+              opacity: `${currentCarrouselIndex === index ? "1" : 0}`,
+            }}
+            key={index}
+          ></div>
+        ))}
         <div className="carousel-filter">
-          <section className="carousel-text">
+          <div className="carousel-text">
             <h3>Trouver votre location de vacences en Touraine</h3>
             <h1>Conciergerie Airbnb à Tours et Amboise</h1>
-          </section>
+          </div>
         </div>
       </div>
+
       <section className="container prestations-section">
         <h3>Propriétaire et désireux de déléguer la gestion de votre bien ?</h3>
         <h3>De l'accueil au ménage, nous gérons tout à votre place !</h3>
