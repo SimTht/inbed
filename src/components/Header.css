@@ -41,11 +41,13 @@ header * {
 }
 
 .nav-list {
+  margin-left: auto;
+}
+
+.nav-list ul {
   display: flex;
-  flex-direction: row;
   justify-content: end;
   list-style: none;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -66,10 +68,38 @@ header * {
 
 .burger-menu {
   display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
   .burger-menu {
     display: initial;
   }
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: none;
+  max-height: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.side-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  max-height: none;
+  background-color: var(--main-2);
+}
+
+.side-menu ul li {
+  margin-bottom: 1rem;
 }

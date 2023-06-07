@@ -18,7 +18,7 @@
   z-index: 1;
   cursor: pointer;
   width: 3rem;
-  height: 100%;
+  height: 80%;
   fill: var(--color-1);
 }
 
@@ -32,13 +32,9 @@
   z-index: 1;
   cursor: pointer;
   width: 3rem;
-  height: 100%;
+  height: 80%;
   fill: var(--color-1);
 }
-
-/* .top-rate-boxes-wrap {
-  overflow-x: hidden;
-} */
 
 .top-rate-boxes-container {
   display: flex;
@@ -67,11 +63,11 @@
   font-size: 2rem;
   line-height: 1;
   color: #ffc107;
-  margin: 0 0 0.5rem;
+  margin: auto auto 0;
 }
 
 .top-rate-box p {
-  margin: 0 0 1rem;
+  margin: 1rem auto 1rem;
   font-size: 1.25rem;
   font-style: italic;
   text-align: center;
@@ -79,6 +75,7 @@
 
 .top-rate-box small {
   color: var(--text-2);
+  margin-bottom: auto;
 }
 
 .dot-selector {

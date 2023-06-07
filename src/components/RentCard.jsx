@@ -65,7 +65,7 @@ function RentCard({ rent }) {
               transform: `translate(-${cardImgIndex * 100}%)`,
               backgroundImage: `url(${image})`,
             }}
-            key={rent.id}
+            key={image}
           />
         ))}
         <div
