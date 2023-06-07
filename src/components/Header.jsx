@@ -6,7 +6,7 @@ import "./Header.css";
 import logo from "../assets/logo-header.png";
 import burgerLogo from "../assets/burger-logo.svg";
 
-const Header = () => {
+function Header() {
   return (
     <header>
       <div className="container">
@@ -52,6 +52,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

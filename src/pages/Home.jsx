@@ -11,10 +11,9 @@ import carrousel3 from "../assets/carrousel/3.webp";
 import carrousel4 from "../assets/carrousel/4.webp";
 import rents from "../data/rentals.json";
 
-const Home = () => {
+function Home() {
   const carrouselPaths = [carrousel1, carrousel2, carrousel3, carrousel4];
   const [currentCarrouselIndex, setCurrentCarrouselIndex] = useState(0);
-  const activeCarrouselStyle = { opacity: "0" };
 
   useEffect(() => {
     const timeout = setInterval(() => {
@@ -28,7 +27,7 @@ const Home = () => {
 
   return (
     <main>
-      <div></div>
+      <div />
       <div className="carrousel-container">
         {carrouselPaths.map((carrouselPath, index) => (
           <div
@@ -38,7 +37,7 @@ const Home = () => {
               opacity: `${currentCarrouselIndex === index ? "1" : 0}`,
             }}
             key={index}
-          ></div>
+          />
         ))}
         <div className="carousel-filter">
           <div className="carousel-text">
@@ -123,6 +122,6 @@ const Home = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Home;
