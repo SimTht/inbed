@@ -1,13 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./RentCard.css";
 
 const RentCard = ({ rent }) => {
+  const [cardImgIndex, setCardImgIndex] = useState(0);
+
+  const handleArrowClickCard = (side) => {
+    switch (side) {
+      case "left":
+        cardImgIndex === 0
+          ? setCardImgIndex(rent.images.length - 1)
+          : setCardImgIndex(cardImgIndex - 1);
+        break;
+      case "right":
+        cardImgIndex === rent.images.length - 1
+          ? setCardImgIndex(0)
+          : setCardImgIndex(cardImgIndex + 1);
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
     <div className="rent-card-container">
-      <div className="price-range"></div>
+      <div className="price-range">
+        <strong>
+          {rent.price[0]} € → {rent.price[1]}
+        </strong>{" "}
+        € / nuit
+      </div>
       <div className="card-top">
-        <img src={rent.images[0]} alt="rent-img" />
+        <div
+          className="left-arrow-rent-card"
+          onClick={() => handleArrowClickCard("left")}
+        >
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g data-name="Layer 2">
+                <g data-name="arrow-ios-back">
+                  <rect
+                    width="24"
+                    height="24"
+                    transform="rotate(90 12 12)"
+                    opacity="0"
+                  ></rect>
+                  <path d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        {rent.images.map((image, index) => (
+          <div
+            className="rent-card-image-container"
+            style={{
+              transform: `translate(-${cardImgIndex * 100}%)`,
+              backgroundImage: `url(${image})`,
+            }}
+          ></div>
+        ))}
+        <div
+          className="right-arrow-rent-card"
+          onClick={() => handleArrowClickCard("right")}
+        >
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier"></g>
+            <g id="SVGRepo_tracerCarrier"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g data-name="Layer 2">
+                <g data-name="arrow-ios-forward">
+                  <rect
+                    width="24"
+                    height="24"
+                    transform="rotate(-90 12 12)"
+                    opacity="0"
+                  ></rect>
+                  <path d="M10 19a1 1 0 0 1-.64-.23 1 1 0 0 1-.13-1.41L13.71 12 9.39 6.63a1 1 0 0 1 .15-1.41 1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
       </div>
       <div className="card-middle">
         <small>{rent.city}</small>

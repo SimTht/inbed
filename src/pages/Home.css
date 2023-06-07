@@ -115,5 +115,9 @@
 
 .selection-card-container {
   width: calc(50% - 2rem);
-  height: fit-content;
+  flex-grow: 100%;
+}
+
+.top-rate {
+  overflow: hidden;
 }

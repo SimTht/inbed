@@ -8,7 +8,18 @@
     "people": 4,
     "rooms": 2,
     "bathrooms": 2,
-    "images": [""]
+    "images": [
+      "../assets/rents/1/1.webp",
+      "../assets/rents/1/2.webp",
+      "../assets/rents/1/3.webp",
+      "../assets/rents/1/4.webp",
+      "../assets/rents/1/5.webp",
+      "../assets/rents/1/6.webp",
+      "../assets/rents/1/7.webp",
+      "../assets/rents/1/8.webp",
+      "../assets/rents/1/9.webp",
+      "../assets/rents/1/10.webp"
+    ]
   },
   {
     "id": 2,
@@ -19,7 +30,39 @@
     "people": 14,
     "rooms": 6,
     "bathrooms": 6,
-    "images": [""]
+    "images": [
+      "../assets/rents/2/1.webp",
+      "../assets/rents/2/2.webp",
+      "../assets/rents/2/3.webp",
+      "../assets/rents/2/4.webp",
+      "../assets/rents/2/5.webp",
+      "../assets/rents/2/6.webp",
+      "../assets/rents/2/7.webp",
+      "../assets/rents/2/8.webp",
+      "../assets/rents/2/9.webp",
+      "../assets/rents/2/10.webp",
+      "../assets/rents/2/11.webp",
+      "../assets/rents/2/12.webp",
+      "../assets/rents/2/13.webp",
+      "../assets/rents/2/14.webp",
+      "../assets/rents/2/15.webp",
+      "../assets/rents/2/16.webp",
+      "../assets/rents/2/17.webp",
+      "../assets/rents/2/18.webp",
+      "../assets/rents/2/19.webp",
+      "../assets/rents/2/20.webp",
+      "../assets/rents/2/21.webp",
+      "../assets/rents/2/22.webp",
+      "../assets/rents/2/23.webp",
+      "../assets/rents/2/24.webp",
+      "../assets/rents/2/25.webp",
+      "../assets/rents/2/26.webp",
+      "../assets/rents/2/27.webp",
+      "../assets/rents/2/28.webp",
+      "../assets/rents/2/29.webp",
+      "../assets/rents/2/30.webp",
+      "../assets/rents/2/31.webp"
+    ]
   },
   {
     "id": 3,
@@ -30,7 +73,18 @@
     "people": 4,
     "rooms": 1.5,
     "bathrooms": 1,
-    "images": [""]
+    "images": [
+      "../assets/rents/3/1.webp",
+      "../assets/rents/3/2.webp",
+      "../assets/rents/3/3.webp",
+      "../assets/rents/3/4.webp",
+      "../assets/rents/3/5.webp",
+      "../assets/rents/3/6.webp",
+      "../assets/rents/3/7.webp",
+      "../assets/rents/3/8.webp",
+      "../assets/rents/3/9.webp",
+      "../assets/rents/3/10.webp"
+    ]
   },
   {
     "id": 4,
@@ -41,6 +95,21 @@
     "people": 6,
     "rooms": 3,
     "bathrooms": 1,
-    "images": [""]
+    "images": [
+      "../assets/rents/4/1.webp",
+      "../assets/rents/4/2.webp",
+      "../assets/rents/4/3.webp",
+      "../assets/rents/4/4.webp",
+      "../assets/rents/4/5.webp",
+      "../assets/rents/4/6.webp",
+      "../assets/rents/4/7.webp",
+      "../assets/rents/4/8.webp",
+      "../assets/rents/4/9.webp",
+      "../assets/rents/4/10.webp",
+      "../assets/rents/4/11.webp",
+      "../assets/rents/4/12.webp",
+      "../assets/rents/4/13.webp",
+      "../assets/rents/4/14.webp"
+    ]
   }
 ]
