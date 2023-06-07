@@ -165,12 +165,20 @@ const InfoContact = () => {
         <div className="info-contact-location-range container">
           <h4>Les principales villes où nous intervenons sont :</h4>
           <p>
-            Tours, Saint Avertin, Saint-Cyr-sur-Loire, Chambray-lès-Tours,
-            Joué-lès-Tours, La Riche, Saint-Pierre-des-Corps, La
-            Ville-aux-Dames, Montlouis-sur-Loire, Vouvray, Rochecorbon,
-            Azay-sur-Cher, Athée-sur-cher, Véretz, Larçay, Amboise,
-            Nazelles-Négron, Lussault-sur-Loire, Pocé-sur-Cisse, Bléré,
-            Chenonceaux, Chargé, Mosnes ainsi que Chaumont-Sur-Loire.
+            Tours (37000), Saint-Cyr-sur-Loire (37540), Saint-Pierre-des-Corps
+            (37700), La Ville-aux-Dames (37700), Montlouis-sur-Loire (37270),
+            Vouvray (37210), Rochecorbon (37210), Azay-sur-Cher (37270),
+            Athée-sur-Cher (37270), Véretz (37270), Larçay (37124),
+            Saint-Avertin (37550), La Riche (37520), Chambray-lès-Tours (37170),
+            Joué-lès-Tours (37300), Cerelles (37390), Charentilly (37390),
+            Chanceaux-sur-Choisille (37390), Saint-Roch (37390), La
+            Membrolle-sur-Choisille (37390), Mettray (37390), Notre-Dame-d'Oé
+            (37390), Lussault-sur-Loire (37400), Amboise (37400), Charge
+            (37530), Souvigny de Touraine (37530), Montreuil-en-Touraine
+            (37530), Limeray (37530), Cangey (37530), Saint-Ouen-les-Vignes
+            (37530), Saint-Règle (37530), Nazelles-Négron (37530), Mosnes
+            (37530), Pocé-sur-Cisse (37530), Bléré (37150) ou encore Chenonceau
+            (37150).
           </p>
         </div>
         <h2 className="container">
