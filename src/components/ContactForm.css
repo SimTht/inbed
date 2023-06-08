@@ -17,6 +17,26 @@
   font-size: 1rem;
 }
 
+#name {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+#email {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#phone {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+#country {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+
 .contact-form-message {
   margin-top: 1rem;
   width: 100%;

@@ -36,7 +36,7 @@ const ContactForm = () => {
       formData.message === "" ||
       !formData.rgpd
     ) {
-      console.log("nope");
+      alert("Veuillez vérifier votre saisie");
     } else {
       emailjs
         .sendForm(
