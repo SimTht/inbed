@@ -185,8 +185,8 @@ const InfoContact = () => {
           Demandez <strong>gratuitement</strong> votre estimation de revenus
           locatifs
         </h2>
-        <div className="contact-form-container container">
-          <div>
+        <section className="contact-form-bottom container">
+          <div className="contact-form-infos">
             <h3>Adresse</h3>
             <p>
               4 chemin des bruyères
@@ -203,8 +203,10 @@ const InfoContact = () => {
             <h3>Email</h3>
             <p>contact@inbed.fr</p>
           </div>
-          <ContactForm />
-        </div>
+          <div className="contact-form-container">
+            <ContactForm />
+          </div>
+        </section>
       </section>
     </main>
   );

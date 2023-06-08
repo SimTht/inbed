@@ -17,7 +17,7 @@ const Footer = () => {
             Envoyer un message
           </Link>
         </section>
-        <section className="footer-adresse">
+        <section className="footer-adress">
           <h4>Adresse</h4>
           <div>
             <p>

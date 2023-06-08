@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-  .about-us-top {
-    margin-top: 3.5rem;
-  }
-}
-
 .about-us-middle {
   display: flex;
   flex-direction: column;

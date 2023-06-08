@@ -48,6 +48,10 @@ main section {
   main section {
     padding: 4.5rem 0;
   }
+
+  main {
+    margin-top: 3.5rem;
+  }
 }
 
 h1 {

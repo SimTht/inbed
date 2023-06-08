@@ -15,7 +15,7 @@ footer section {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding: 4.5rem 0;
+  padding: 2rem 0;
   gap: 50px;
 }
 
@@ -51,4 +51,19 @@ footer section {
 
 .social-network a {
   margin: 0 0 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-adress {
+    display: none;
+  }
+
+  .footer-1 {
+    flex-direction: column;
+  }
+
+  .footer-1 * {
+    width: 100%;
+    max-width: 100%;
+  }
 }
