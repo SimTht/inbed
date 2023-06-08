@@ -13,6 +13,7 @@ function Header() {
   const burgerClick = () => {
     setActivateSideMenu(!activateSideMenu);
   };
+  const closeSideMenuClick = () => {};
 
   return (
     <header>
@@ -21,7 +22,20 @@ function Header() {
           <img src={logo} className="logo-header" alt="logo" />
         </Link>
 
-        <nav className={`nav-list ${activateSideMenu ? "side-menu" : ""}`}>
+        <nav
+          className={`nav-list ${activateSideMenu ? "side-menu" : ""}`}
+          onClick={() => {
+            setActivateSideMenu(false);
+          }}
+        >
+          <button
+            className="close-side-menu-cross"
+            onClick={() => {
+              setActivateSideMenu(false);
+            }}
+          >
+            🞪
+          </button>
           <ul>
             <li className="nav-list-item">
               <Link to="/">Acceuil</Link>

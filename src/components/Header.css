@@ -89,9 +89,12 @@ header * {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
+  transition: all 3s ease-in-out 300;
 }
 
 .side-menu ul {
+  max-width: 100vw;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -102,4 +105,15 @@ header * {
 
 .side-menu ul li {
   margin-bottom: 1rem;
+}
+
+.close-side-menu-cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  font-size: 1.75rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

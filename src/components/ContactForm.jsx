@@ -62,8 +62,6 @@ const ContactForm = () => {
     <form className="contact-form" onSubmit={sendEmail}>
       <div className="contact-details">
         <label htmlFor="name">Nom *</label>
-        <label htmlFor="email">Email *</label>
-
         <input
           type="text"
           id="name"
@@ -72,6 +70,7 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
         />
+        <label htmlFor="email">Email *</label>
         <input
           type="email"
           id="email"
@@ -82,8 +81,6 @@ const ContactForm = () => {
         />
 
         <label htmlFor="phone">Téléphone</label>
-        <label htmlFor="country">Pays</label>
-
         <input
           type="tel"
           id="phone"
@@ -92,6 +89,7 @@ const ContactForm = () => {
           value={formData.phone}
           onChange={handleChange}
         />
+        <label htmlFor="country">Pays</label>
         <input
           type="text"
           id="country"

@@ -30,6 +30,21 @@
   object-fit: contain;
 }
 
+@media screen and (max-width: 768px) {
+  .info-contact-intro div {
+    flex-direction: column;
+  }
+
+  .info-contact-intro div * {
+    width: 100%;
+    max-width: none;
+  }
+
+  .info-contact-intro .left {
+    width: 100%;
+  }
+}
+
 .info-contact-prestations {
   display: flex;
   justify-content: center;
@@ -72,6 +87,22 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+  .info-contact-price {
+    flex-direction: column;
+  }
+
+  .info-contact-price img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info-contact-price div {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .info-contact-location-range {
   text-align: center;
   margin: 0 auto 6rem;
@@ -103,4 +134,10 @@
 .contact-form-container {
   flex: 1;
   padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form-bottom {
+    flex-direction: column;
+  }
 }

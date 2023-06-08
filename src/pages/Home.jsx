@@ -14,7 +14,6 @@ import rents from "../data/rentals.json";
 const Home = () => {
   const carrouselPaths = [carrousel1, carrousel2, carrousel3, carrousel4];
   const [currentCarrouselIndex, setCurrentCarrouselIndex] = useState(0);
-  const activeCarrouselStyle = { opacity: "0" };
 
   useEffect(() => {
     const timeout = setInterval(() => {

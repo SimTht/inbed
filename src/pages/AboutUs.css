@@ -22,11 +22,8 @@
 }
 
 .about-us-middle p {
-  text-align: justify;
-}
-
-.about-us-middle p {
   margin: 1rem 0;
+  text-align: justify;
 }
 
 .about-us-middle .right {
@@ -43,12 +40,26 @@
   margin: 1rem 0 0 0;
 }
 
+@media screen and (max-width: 768px) {
+  .about-us-middle-main {
+    flex-direction: column;
+  }
+
+  .about-us-middle .right {
+    width: auto;
+  }
+
+  .about-us-middle .left {
+    width: auto;
+  }
+}
+
 .about-us-bottom {
   display: flex;
 }
 
 .about-us-bottom h4 {
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 .about-us-bottom div {
@@ -72,4 +83,14 @@
 .about-us-bottom ul {
   list-style-type: disc;
   padding-left: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-bottom {
+    flex-direction: column;
+  }
+
+  .about-us-bottom div {
+    width: auto;
+  }
 }

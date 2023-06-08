@@ -366,7 +366,11 @@ const HousingIndreLoire = () => {
             (37150).
           </p>
           <center>
-            <Link to={"/tours"} className="btn">
+            <Link
+              to={"/tours"}
+              className="btn"
+              style={{ marginBottom: "1rem" }}
+            >
               En savoir plus sur la conciergerie à Tours
             </Link>{" "}
             <Link to={"/amboise"} className="btn">

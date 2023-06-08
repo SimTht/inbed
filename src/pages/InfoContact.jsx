@@ -11,10 +11,12 @@ const InfoContact = () => {
     <main>
       <div></div>
       <section className="info-contact-title">
-        <h3>
-          Inbed, votre partenaire de confiance pour la gestion de vos locations
-          touristiques.
-        </h3>
+        <center>
+          <h3 className="container">
+            Inbed, votre partenaire de confiance pour la gestion de vos
+            locations touristiques.
+          </h3>
+        </center>
       </section>
       <section className="info-contact-intro">
         <div className="container">
