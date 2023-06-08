@@ -26,6 +26,10 @@
   color: var(--text-4);
 }
 
+.tours-container a:hover {
+  text-decoration: underline;
+}
+
 .tours-container .btn {
   color: var(--text-3);
 }

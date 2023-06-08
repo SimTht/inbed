@@ -26,6 +26,10 @@
   color: var(--text-4);
 }
 
+.amboise-container a:hover {
+  text-decoration: underline;
+}
+
 .amboise-container .btn {
   color: var(--text-3);
 }

@@ -10,7 +10,11 @@ const HousingIndreLoire = () => {
   return (
     <main>
       <section>
-        <h1>Conciergerie Airbnb Tours et Amboise (37)</h1>
+        <center>
+          <h1 className="container">
+            Conciergerie Airbnb Tours et Amboise (37)
+          </h1>
+        </center>
       </section>
       <section className="indreetloire-section">
         <div className="container indreetloire-container">

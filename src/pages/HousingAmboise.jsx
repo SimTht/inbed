@@ -9,7 +9,11 @@ const HousingAmboise = () => {
   return (
     <main>
       <section>
-        <h1>Conciergerie Airbnb à Amboise en Indre-et-Loire (37)</h1>
+        <center>
+          <h1 className="container">
+            Conciergerie Airbnb à Amboise en Indre-et-Loire (37)
+          </h1>
+        </center>
       </section>
       <section className="amboise-section">
         <div className="container amboise-container">
