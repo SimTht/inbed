@@ -7,6 +7,7 @@ import "./ContactForm.css";
 const ContactForm = () => {
   const [captchaToken, setCaptchaToken] = useState("");
   const onChange = (value) => {
+    console.log(value);
     setCaptchaToken(value);
   };
 
@@ -31,6 +32,7 @@ const ContactForm = () => {
     console.log(e);
     if (
       captchaToken === null ||
+      captchaToken === "" ||
       formData.name === "" ||
       formData.email === "" ||
       formData.message === "" ||
@@ -130,7 +132,7 @@ const ContactForm = () => {
         </label>
 
         <ReCAPTCHA
-          sitekey="6LcAS3QmAAAAAL7bbwWA0PDkWirFRnmFBOQ8MOmP"
+          sitekey="6LdqiJomAAAAAPD-MY_h0gR_7d8US7RoZ8hNs3Ov"
           onChange={onChange}
         />
 

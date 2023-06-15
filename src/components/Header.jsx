@@ -38,7 +38,7 @@ function Header() {
           </button>
           <ul>
             <li className="nav-list-item">
-              <Link to="/">Acceuil</Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li className="nav-list-item">
               <a
