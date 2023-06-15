@@ -132,7 +132,7 @@ const ContactForm = () => {
         </label>
 
         <ReCAPTCHA
-          sitekey="6LdqiJomAAAAAPD-MY_h0gR_7d8US7RoZ8hNs3Ov"
+          sitekey="6LejwZ0mAAAAAMFqxbx5rCc9sSPFRVCqpQztAJVr"
           onChange={onChange}
         />
 

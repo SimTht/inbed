@@ -24,7 +24,12 @@ const RentCard = ({ rent }) => {
   };
 
   return (
-    <div className="rent-card-container">
+    <a
+      href={rent.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rent-card-container"
+    >
       <div className="price-range">
         <strong>
           {rent.price[0]} € → {rent.price[1]}
@@ -176,7 +181,7 @@ const RentCard = ({ rent }) => {
           <span>{rent.bathrooms}</span>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

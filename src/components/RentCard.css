@@ -30,11 +30,15 @@
   display: flex;
   align-items: center;
   font-size: 1rem;
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   width: 3rem;
   fill: var(--main-1);
   transform: translateY(-50%);
+}
+
+.left-arrow-rent-card * {
+  z-index: 2;
 }
 
 .right-arrow-rent-card {

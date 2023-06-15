@@ -106,7 +106,13 @@ const Home = () => {
               <h2>Nos Locations</h2>
               <p>Découvrez notre selection du moment</p>
             </div>
-            <Link to="/rentals">Découvrir toutes nos locations</Link>
+            <a
+              href="https://www.airbnb.fr/users/479186120/listings"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Découvrir toutes nos locations
+            </a>
           </div>
           <div className="rent-selection">
             {rents.map((rent) => (

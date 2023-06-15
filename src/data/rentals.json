@@ -8,6 +8,7 @@
     "people": 4,
     "rooms": 2,
     "bathrooms": 2,
+    "link": "https://www.airbnb.fr/rooms/865810484478698272",
     "images": [
       "../assets/rents/1/1.webp",
       "../assets/rents/1/2.webp",
@@ -30,6 +31,7 @@
     "people": 14,
     "rooms": 6,
     "bathrooms": 6,
+    "link": "https://www.airbnb.fr/rooms/50806453",
     "images": [
       "../assets/rents/2/1.webp",
       "../assets/rents/2/2.webp",
@@ -73,6 +75,7 @@
     "people": 4,
     "rooms": 1.5,
     "bathrooms": 1,
+    "link": "https://www.airbnb.fr/rooms/41856452",
     "images": [
       "../assets/rents/3/1.webp",
       "../assets/rents/3/2.webp",
@@ -95,6 +98,7 @@
     "people": 6,
     "rooms": 3,
     "bathrooms": 1,
+    "link": "https://www.airbnb.fr/rooms/47914026",
     "images": [
       "../assets/rents/4/1.webp",
       "../assets/rents/4/2.webp",
