@@ -11,21 +11,24 @@ function Header() {
     setActivateSideMenu(!activateSideMenu);
   };
 
-  const [isTransparent, setIsTransparent] = useState(false);
+  const [isTransparent, setIsTransparent] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       const isAtTop = window.scrollY === 0;
-      console.log(isAtTop);
       setIsTransparent(isAtTop);
     };
 
     if (location.pathname === "/") {
+      setIsTransparent(true);
       window.addEventListener("scroll", handleScroll);
       return () => {
         window.removeEventListener("scroll", handleScroll);
+        setIsTransparent(false);
       };
+    } else {
+      setIsTransparent(false);
     }
   }, [location.pathname]);
 
@@ -33,7 +36,7 @@ function Header() {
     <header
       style={
         isTransparent
-          ? { backgroundColor: "rgba(0, 0, 0, 0)" }
+          ? { backgroundColor: "rgba(var(--main-1), 0)" }
           : {
               backgroundColor: "var(--main-1)",
               boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
@@ -75,24 +78,40 @@ function Header() {
           </button>
           <ul>
             <li className="nav-list-item">
-              <Link to="/">Accueil</Link>
+              <Link
+                to="/"
+                style={isTransparent ? { color: "var(--text-3)" } : null}
+              >
+                Accueil
+              </Link>
             </li>
             <li className="nav-list-item">
               <a
                 href="https://www.airbnb.fr/users/479186120/listings"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={isTransparent ? { color: "var(--text-3)" } : null}
               >
                 Nos Locations
               </a>
             </li>
 
             <li className="nav-list-item">
-              <Link to="/contact">Déléguez la gestion de votre bien</Link>
+              <Link
+                to="/contact"
+                style={isTransparent ? { color: "var(--text-3)" } : null}
+              >
+                Déléguez la gestion de votre bien
+              </Link>
             </li>
 
             <li className="nav-list-item">
-              <Link to="/about">Qui sommes nous ?</Link>
+              <Link
+                to="/about"
+                style={isTransparent ? { color: "var(--text-3)" } : null}
+              >
+                Qui sommes nous ?
+              </Link>
             </li>
           </ul>
         </nav>
@@ -105,7 +124,7 @@ function Header() {
             viewBox="0 0 30 30"
           >
             <path
-              stroke="black"
+              stroke={isTransparent ? "var(--text-3)" : "var(--text-1)"}
               stroke-linecap="round"
               stroke-miterlimit="10"
               stroke-width="2"
