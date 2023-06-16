@@ -2,15 +2,15 @@
   width: 100%;
   height: fit-content;
   position: relative;
-
+  flex-direction: column;
   display: flex;
   align-items: center;
 }
 
 .left-arrow-rate {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  left: 2rem; */
+  left: 2rem;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -22,9 +22,9 @@
 }
 
 .right-arrow-rate {
-  /* position: absolute;
+  position: absolute;
   top: 0;
-  right: 2rem; */
+  right: 2rem;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -84,18 +84,18 @@
 }
 
 .dot-selector {
+  position: absolute;
+  bottom: -4rem;
   margin-top: 2rem;
   display: flex;
-  font-size: 3rem;
-  line-height: 0;
-  font-weight: 900;
-  letter-spacing: 0.5rem;
   cursor: pointer;
 }
 
 .dot-selector div {
   width: 2rem;
   height: 2rem;
+  display: flex;
+  align-items: center;
   padding: 0.75rem;
   fill: var(--color-1);
 }
