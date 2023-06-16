@@ -50,7 +50,7 @@ function TopRates() {
         </g>
       </svg>
       <div
-        className="top-rate-boxes-container"
+        className="top-rate-boxes-container container"
         style={{ transform: `translate(-${rateIndex * 110}%)` }}
       >
         {reviews.map((review, i) => (
