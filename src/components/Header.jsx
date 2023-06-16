@@ -1,12 +1,9 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import "./Header.css";
 
 import logo from "../assets/logo-header.png";
-import burgerLogo from "../assets/burger-logo.svg";
 
 function Header() {
   const [activateSideMenu, setActivateSideMenu] = useState(false);
@@ -14,8 +11,35 @@ function Header() {
     setActivateSideMenu(!activateSideMenu);
   };
 
+  const [isTransparent, setIsTransparent] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isAtTop = window.scrollY === 0;
+      console.log(isAtTop);
+      setIsTransparent(isAtTop);
+    };
+
+    if (location.pathname === "/") {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [location.pathname]);
+
   return (
-    <header>
+    <header
+      style={
+        isTransparent
+          ? { backgroundColor: "rgba(0, 0, 0, 0)" }
+          : {
+              backgroundColor: "var(--main-1)",
+              boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
+            }
+      }
+    >
       <div className="container">
         <Link to="/">
           <img src={logo} className="logo-header" alt="logo" />
@@ -35,7 +59,7 @@ function Header() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="svg-icon"
+              className="svg-icon"
               style={{
                 width: "1em",
                 height: "1em",
@@ -74,7 +98,20 @@ function Header() {
         </nav>
 
         <div className="burger-menu" onClick={burgerClick}>
-          <img src={burgerLogo} alt="burger_menu_logo" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+          >
+            <path
+              stroke="black"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+              d="M4 7h22M4 15h22M4 23h22"
+            />
+          </svg>
         </div>
 
         <a

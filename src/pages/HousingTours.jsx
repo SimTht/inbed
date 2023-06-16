@@ -105,7 +105,7 @@ const HousingTours = () => {
             </a>
           </p>
           <center>
-            <Link to={"/contact"} class="btn">
+            <Link to={"/contact"} className="btn">
               Je me lance et mets mon logement en location à Tours
             </Link>
           </center>
@@ -239,7 +239,7 @@ const HousingTours = () => {
           </p>
           <center>
             <strong>
-              <Link to={"/contact"} class="btn">
+              <Link to={"/contact"} className="btn">
                 J’estime mes revenus à Tours gratuitement
               </Link>
             </strong>

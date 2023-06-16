@@ -53,7 +53,7 @@ const FAQ = () => {
             <strong>louer sur Airbnb, Booking et Abritel.</strong>
           </p>
           <center>
-            <Link to={"/contact"} class="btn">
+            <Link to={"/contact"} className="btn">
               Je me lance et mets mon logement en location
             </Link>
           </center>
@@ -334,7 +334,7 @@ const FAQ = () => {
             </li>
           </ul>
           <center>
-            <Link to={"/contact"} class="btn">
+            <Link to={"/contact"} className="btn">
               J’estime mes revenus locatifs gratuitement
             </Link>
           </center>
@@ -489,7 +489,7 @@ const FAQ = () => {
             <strong> à tous vos voyageurs.</strong>
           </p>
           <center>
-            <Link to={"/contact"} class="btn">
+            <Link to={"/contact"} className="btn">
               Contacter Inbed dès maintenant
             </Link>
           </center>

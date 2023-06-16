@@ -49,6 +49,10 @@ footer section {
   border-top: 1px var(--text-2) solid;
 }
 
+.footer-2 a {
+  color: var(--main-1);
+}
+
 .social-network a {
   margin: 0 0 0 1rem;
 }
