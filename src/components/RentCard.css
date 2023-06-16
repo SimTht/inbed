@@ -11,6 +11,15 @@
   overflow: hidden;
 }
 
+.rent-card-container a {
+  text-decoration: none;
+  color: unset;
+}
+
+.rent-card-container a:visited {
+  color: unset;
+}
+
 .price-range {
   position: absolute;
   top: 0.5rem;
@@ -70,12 +79,6 @@
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-}
-
-.card-top img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .card-middle {

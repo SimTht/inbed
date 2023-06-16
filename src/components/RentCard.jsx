@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import "./RentCard.css";
 
 const RentCard = ({ rent }) => {
-  const handleBnbClick = (event) => {
-    console.log(event.target.tagName, event.target.className);
-  };
-
   const [cardImgIndex, setCardImgIndex] = useState(0);
 
   const handleArrowClickCard = (side) => {
@@ -28,12 +24,7 @@ const RentCard = ({ rent }) => {
   };
 
   return (
-    <div
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rent-card-container"
-      onClick={handleBnbClick}
-    >
+    <div className="rent-card-container">
       <div className="price-range">
         <strong>
           {rent.price[0]} € → {rent.price[1]}
@@ -64,14 +55,23 @@ const RentCard = ({ rent }) => {
           </svg>
         </div>
         {rent.images.map((image, index) => (
-          <div
+          <a
+            href={rent.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rent-card-image-container"
             style={{
               transform: `translate(-${cardImgIndex * 100}%)`,
               backgroundImage: `url(${image})`,
             }}
             key={image}
-          />
+          >
+            <div
+              style={{
+                backgroundImage: `url(${image})`,
+              }}
+            ></div>
+          </a>
         ))}
         <div
           className="right-arrow-rent-card"
@@ -98,8 +98,12 @@ const RentCard = ({ rent }) => {
       </div>
       <div className="card-middle">
         <small>{rent.city}</small>
-        <h3>{rent.name}</h3>
-        <p>{rent.short}</p>
+        <a href={rent.link} target="_blank" rel="noopener noreferrer">
+          <h3>{rent.name}</h3>
+        </a>
+        <a href={rent.link} target="_blank" rel="noopener noreferrer">
+          <p>{rent.short}</p>
+        </a>
       </div>
       <div className="card-bottom">
         <div>
