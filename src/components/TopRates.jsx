@@ -1,9 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable no-unused-expressions */
 import React, { useState } from "react";
 
 import "./TopRates.css";
@@ -59,7 +53,22 @@ function TopRates() {
         >
           {reviews.map((review, i) => (
             <div className="top-rate-box" key={i}>
-              <div className="stars">🟊🟊🟊🟊🟊</div>
+              <div>
+                {Array(5)
+                  .fill()
+                  .map((_, index) => (
+                    <svg
+                      key={index}
+                      className="stars"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+                    </svg>
+                  ))}
+              </div>
               <p>"{review.text}"</p>
               <small>
                 &#x2015; <b>{review.name}</b> <i>{review.location}</i>
@@ -97,7 +106,9 @@ function TopRates() {
             style={i !== rateIndex ? { opacity: "0.5" } : null}
             onClick={() => setRateIndex(i)}
           >
-            ·
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="50" />
+            </svg>
           </div>
         ))}
       </div>

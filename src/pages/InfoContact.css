@@ -30,6 +30,11 @@
   object-fit: contain;
 }
 
+.info-contact-intro .btn {
+  display: block;
+  margin: 1rem auto 0;
+}
+
 @media screen and (max-width: 768px) {
   .info-contact-intro div {
     flex-direction: column;

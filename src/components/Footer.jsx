@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
       <div className="container footer-2">
         <small className="petites-lignes">
-          © 2021 www.inbed.fr. Tous droits réservés.{" "}
+          © 2023 www.inbed.fr. Tous droits réservés.{" "}
           <a
             href="https://docs.google.com/document/d/e/2PACX-1vQW-xkOsJpgQm6oNTLoA9TJZ2t4pXYiT1Nwpj1kFrbR9NnfPcFpqCIhYjEqHwfglgFgcW4eaCqTkPBQ/pub"
             target="_blank"

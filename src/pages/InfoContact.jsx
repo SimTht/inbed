@@ -23,34 +23,60 @@ const InfoContact = () => {
           <div className="left">
             <div>
               <h4>
-                <b>Gardez l'esprit libre</b>
+                <b>
+                  Gardez l'esprit libre avec la gestion locative en Touraine
+                </b>
               </h4>
               <p>
-                Nous vous débarrassons des contraintes de la location courte
-                durée tout en vous faisant profiter de tous ses avantages.
+                Inbed vous débarrasse des contraintes de la{" "}
+                <a
+                  href="https://www.airbnb.fr/users/479186120/listings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  location BnB courte durée
+                </a>{" "}
+                tout en vous faisant profiter de tous ses avantages ! Vous
+                pouvez nous confier en toute sérénité votre logement, qu’il
+                s’agisse d’un <strong>appartement</strong>, d’une
+                <strong> maison</strong> ou d’un <strong>gite</strong> pour de
+                la gestion locative à Tours ou Amboise (37).
               </p>
             </div>
             <div>
               <h4>
-                <b>Gardez le contrôle</b>
+                <b>Gardez le contrôle de votre logement Airbnb</b>
               </h4>
               <p>
-                Le suivi de toutes les réservations est centralisé sur votre
-                espace propriétaire : détails des réservations, nombre de
-                voyageurs, loyers perçus, …
+                Le suivi de toutes les réservations de votre{" "}
+                <strong>bien immobilier à Tours ou Amboise</strong> est
+                centralisé sur votre espace propriétaire pour un accès facile :{" "}
+                <strong>
+                  détails des réservations, nombre de voyageurs, loyers perçus,…
+                </strong>{" "}
+                C’est simple, rapide et pratique&nbsp;!
               </p>
             </div>
             <div>
               <h4>
-                <b>Gagnez du temps</b>
+                <b>Gagnez du temps et générez des revenus locatifs</b>
               </h4>
               <p>
-                <strong>Inbed</strong> s'occupe de tout !
+                Inbed<strong>s'occupe de tout !</strong> De la création de votre
+                annonce sur Airbnb, Booking, Abritel ou encore Inbed jusqu’au
+                ménage de fin de séjour, vous n’aurez rien à faire !<br /> Inbed
+                est donc un moyen sûr et efficace de mettre à profit un logement
+                inutilisé et de{" "}
+                <strong>générer des revenus locatifs facilement</strong>.
               </p>
             </div>
           </div>
           <img src={airbnbPhone} alt="airbnb_smartphone" className="right" />
         </div>
+        <a href="#contact-form" className="btn">
+          Contactez Inbed dès maintenant
+        </a>
       </section>
       <section className="info-contact-prestations">
         <div className="container">
@@ -141,12 +167,12 @@ const InfoContact = () => {
         <img src={maidImg} alt="service_image" />
         <div>
           <h4>
-            <strong>Combien ça coûte ?</strong>
+            <strong>Inbed, combien cela coûte ?</strong>
           </h4>
           <span className="commission">20%</span>
           <p id="text-commission">
-            de commission sur les loyers perçus + les frais de ménage payés par
-            les voyageurs.
+            <strong>de commission</strong> sur les loyers perçus + les frais de
+            ménage payés par les voyageurs.
           </p>
           <u>Exemple de revenu :</u>
           <p>
@@ -183,7 +209,7 @@ const InfoContact = () => {
             (37150).
           </p>
         </div>
-        <h2 className="container">
+        <h2 className="container" id="contact-form">
           Demandez <strong>gratuitement</strong> votre estimation de revenus
           locatifs
         </h2>

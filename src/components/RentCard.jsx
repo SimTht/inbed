@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import "./RentCard.css";
 
 const RentCard = ({ rent }) => {
+  const handleBnbClick = (event) => {
+    console.log(event.target.tagName, event.target.className);
+  };
+
   const [cardImgIndex, setCardImgIndex] = useState(0);
 
   const handleArrowClickCard = (side) => {
@@ -24,11 +28,11 @@ const RentCard = ({ rent }) => {
   };
 
   return (
-    <a
-      href={rent.link}
+    <div
       target="_blank"
       rel="noopener noreferrer"
       className="rent-card-container"
+      onClick={handleBnbClick}
     >
       <div className="price-range">
         <strong>
@@ -181,7 +185,7 @@ const RentCard = ({ rent }) => {
           <span>{rent.bathrooms}</span>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 

@@ -4,14 +4,13 @@
   position: relative;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .left-arrow-rate {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 2rem;
+  left: 2rem; */
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -23,9 +22,9 @@
 }
 
 .right-arrow-rate {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 2rem;
+  right: 2rem; */
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -59,11 +58,17 @@
   flex-shrink: 0;
 }
 
+.top-rate-box div {
+  margin-top: auto;
+}
+
 .stars {
-  font-size: 2rem;
-  line-height: 1;
-  color: #ffc107;
-  margin: auto auto 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #ffc107;
+  margin: auto 0.25rem;
 }
 
 .top-rate-box p {
@@ -79,12 +84,18 @@
 }
 
 .dot-selector {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   font-size: 3rem;
   line-height: 0;
   font-weight: 900;
   letter-spacing: 0.5rem;
-  color: var(--color-1);
   cursor: pointer;
+}
+
+.dot-selector div {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.75rem;
+  fill: var(--color-1);
 }
