@@ -63,11 +63,11 @@ const InfoContact = () => {
                 <b>Gagnez du temps et générez des revenus locatifs</b>
               </h4>
               <p>
-                Inbed<strong>s'occupe de tout !</strong> De la création de votre
-                annonce sur Airbnb, Booking, Abritel ou encore Inbed jusqu’au
-                ménage de fin de séjour, vous n’aurez rien à faire !<br /> Inbed
-                est donc un moyen sûr et efficace de mettre à profit un logement
-                inutilisé et de{" "}
+                Inbed<strong> s'occupe de tout !</strong> De la création de
+                votre annonce sur Airbnb, Booking, Abritel ou encore Inbed
+                jusqu’au ménage de fin de séjour, vous n’aurez rien à faire !
+                <br /> Inbed est donc un moyen sûr et efficace de mettre à
+                profit un logement inutilisé et de{" "}
                 <strong>générer des revenus locatifs facilement</strong>.
               </p>
             </div>

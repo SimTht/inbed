@@ -189,7 +189,7 @@ const HousingAmboise = () => {
             est disponible pour vous aider !
           </p>
           <center>
-            <Link to={"/contact"} class="btn">
+            <Link to={"/contact"} className="btn">
               J’estime mes revenus à Amboise gratuitement
             </Link>
           </center>
