@@ -13,7 +13,7 @@ const Footer = () => {
             Nous serions ravis d'échanger avec vous, n'hésitez pas à nous
             contacter pour toute demande.
           </p>
-          <Link to="/contact" className="btn">
+          <Link to="/contact#form" className="btn">
             Envoyer un message
           </Link>
         </section>

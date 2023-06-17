@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../components/ContactForm";
+import { Link } from "react-router-dom";
 
 import "./InfoContact.css";
 
@@ -82,82 +83,111 @@ const InfoContact = () => {
         <div className="container">
           <div className="prestation-cards">
             <div className="prestation-card">
-              <h3>Ménage premium</h3>
+              <h3>MÉNAGE PREMIUM DE VOTRE LOGEMENT EN TOURAINE</h3>
               <p>
-                Chez <strong>Inbed</strong>, nous proposons un suivi minutieux
-                de votre propriété avec des prestataires de qualité.
-                <br />
-                <br />
-                Dans cette démarche, nous nous sommes associé à "Axeo services"
-                situé à Nazelles-Négron pouvant intervenir sur un secteur allant
-                de Tours à Amboise.
-                <br />
-                <br />
-                Le ménage est réalisé systématiquement après chaque séjour par
-                notre équipe professionnelle.
+                Chez Inbed, nous proposons{" "}
+                <Link to="/faq">
+                  un suivi minutieux de votre location Airbnb
+                </Link>{" "}
+                avec des <strong>prestataires de qualité</strong>. Le ménage est
+                réalisé systématiquement après chaque séjour par notre équipe
+                professionnelle. Inbed, c’est la garantie d’un{" "}
+                <strong>logement toujours propre</strong> et prêt à accueillir
+                de nouveaux visiteurs à tout moment&nbsp;!{" "}
               </p>
             </div>
             <div className="prestation-card">
-              <h3>Blanchisserie haut de gamme</h3>
+              <h3>BLANCHISSERIE HAUT DE GAMME</h3>
               <p>
                 La qualité du sommeil nous est chère, c’est pour cela que nous
-                confions l’entretien et la fourniture du linge de maison à la
-                blanchisserie "Elis Touraine" située à Montlouis sur Loire
+                confions{" "}
+                <strong>
+                  l’entretien et la fourniture du linge de maison à la
+                  blanchisserie "Elis Touraine" située à Montlouis sur Loire
+                </strong>{" "}
                 proposant des produits de qualité hôtelière.
-                <br />
-                <br />
-                Nous fournissons l'ensemble du linge de maison pour votre
-                logement : draps, serviettes, tapis de bain et torchons.
+                <br /> Nous fournissons l'ensemble du linge de maison pour votre
+                logement Airbnb :{" "}
+                <strong>draps, serviettes, tapis de bain et torchons</strong>.
+                Encore une chose en moins à penser avec Inbed !
               </p>
             </div>
             <div className="prestation-card">
-              <h3>Accueil personnalisé 24/7</h3>
-              <p>
-                Notre personnel <strong>Inbed</strong> accompagne les voyageurs
-                tout au long de leur séjour.
-                <br />
+              <h3>ACCUEIL PERSONNALISÉ DANS VOTRE LOCATION 24/7</h3>
+              <p class="card-text text-muted">
+                {" "}
+                Notre personnel<strong>Inbed</strong>accompagne les voyageurs
+                tout au long de leur séjour dans votre{" "}
+                <Link to="/contact#form" href="#formulaire_contact">
+                  location Airbnb à Tours et Amboise.
+                </Link>
                 <br />
                 Il nous tient à cœur d'être présent le plus souvent possible en
                 personne (pour leur accueil et leur départ) afin de s’assurer
                 que tout se soit bien passé.
                 <br />
-                <br />
                 Nous fournissons un ensemble de consommables permettant aux
-                voyageurs de passer la première nuit l'esprit tranquille.
+                voyageurs de{" "}
+                <strong>passer la première nuit l'esprit tranquille</strong>.
+                Chez Inbed, tout est fait pour que vos visiteurs se sentent bien
+                et{" "}
+                <strong>
+                  n’hésitent pas une seconde à l’idée de revenir !
+                </strong>
               </p>
             </div>
             <div className="prestation-card">
-              <h3>Création des annonces</h3>
+              <h3>CRÉATION DES ANNONCES SUR AIRBNB, BOOKING…</h3>
               <p>
-                Afin d'inciter les futurs voyageurs à réserver votre logement,
-                nous prenons des photos de qualité et rédigeons une description
-                attrayante et personnalisée de votre bien.
+                {" "}
+                Afin d'inciter les futurs voyageurs à{" "}
+                <a
+                  href="https://www.airbnb.fr/users/479186120/listings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  réserver votre logement locatif
+                </a>
+                , nous prenons des <strong>photos de qualité</strong> et
+                rédigeons une description{" "}
+                <strong>attrayante et personnalisée</strong> de votre{" "}
+                <strong>location Airbnb.</strong>
                 <br />
-                <br />
-                Airbnb, Booking.com, Abritel, toutes ces plates-formes nous
-                permettent de vous assurer des taux d’occupation élevés et de
-                maximiser votre rentabilité locative.e
+                <strong>Airbnb, Booking, Abritel,</strong> toutes ces
+                platesformes nous permettent de vous assurer des taux
+                d’occupation élevés et de maximiser votre{" "}
+                <strong>rentabilité locative à Tours et Amboise</strong>.{" "}
               </p>
             </div>
             <div className="prestation-card">
-              <h3>Optimisation des prix</h3>
+              <h3>OPTIMISATION DES PRIX</h3>
               <p>
-                Chez <strong>Inbed</strong>, la gestion des prix de votre
-                propriété est optimisée en fonction des saisons, des prix des
-                logements concurrents ainsi que des événements particuliers tels
-                que les vacances, les jours fériés, les manifestations
-                culturelles ..
+                Chez Inbed, la gestion des prix de votre{" "}
+                <strong>propriété locative</strong> est optimisée en fonction
+                des saisons, des prix des logements concurrents ainsi que des
+                événements particuliers tels que{" "}
+                <strong>
+                  les vacances, les jours fériés, les manifestations
+                  culturelles...
+                </strong>
+                <br /> Inbed, c’est donc aussi un{" "}
+                <strong>suivi régulier de l’actualité</strong> pour que votre
+                logement ne passe à côté d’aucun évènement !{" "}
               </p>
             </div>
             <div className="prestation-card">
-              <h3>Entretien des propriétés</h3>
+              <h3>ENTRETIEN DES PROPRIÉTÉS</h3>
               <p>
-                Notre réactivité est importante pour recevoir de bons
-                commentaires. S’il y a un problème nous intervenons rapidement
-                et vous sollicitons (si besoin) pour gérer au mieux l’incident.
+                {" "}
+                Notre <strong>réactivité est importante</strong> pour recevoir
+                de bons commentaires. S’il y a un problème,{" "}
+                <strong>
+                  nous intervenons rapidement et vous sollicitons (si besoin)
+                </strong>{" "}
+                pour gérer au mieux l’incident.
                 <br />
                 <br />
-                Nous sommes disponibles 24/7 !
+                <Link to="/contact#form">Nous sommes disponibles 24/7 !</Link>
               </p>
             </div>
           </div>

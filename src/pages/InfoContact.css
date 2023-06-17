@@ -7,6 +7,15 @@
   margin: auto;
 }
 
+.info-contact-intro p a {
+  color: var(--text-4);
+  text-decoration: none;
+}
+
+.info-contact-intro a:hover {
+  text-decoration: underline;
+}
+
 .info-contact-intro .left {
   display: flex;
   flex-direction: column;
@@ -53,6 +62,15 @@
 .info-contact-prestations {
   display: flex;
   justify-content: center;
+}
+
+.info-contact-prestations a {
+  color: var(--text-4);
+  text-decoration: none;
+}
+
+.info-contact-prestations a:hover {
+  text-decoration: underline;
 }
 
 .info-contact-price {
