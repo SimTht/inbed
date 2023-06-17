@@ -114,7 +114,7 @@ const InfoContact = () => {
             </div>
             <div className="prestation-card">
               <h3>ACCUEIL PERSONNALISÉ DANS VOTRE LOCATION 24/7</h3>
-              <p class="card-text text-muted">
+              <p>
                 {" "}
                 Notre personnel<strong>Inbed</strong>accompagne les voyageurs
                 tout au long de leur séjour dans votre{" "}

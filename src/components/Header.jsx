@@ -51,8 +51,10 @@ function Header() {
         <nav
           className={`nav-list ${activateSideMenu ? "side-menu" : ""}`}
           onClick={(event) => {
+            console.log(event.target.className);
             if (
-              event.target.className.includes("side-menu") ||
+              (typeof event.target.className === "string" &&
+                event.target.className.includes("side-menu")) ||
               event.target.tagName === "A"
             ) {
               setActivateSideMenu(false);

@@ -7,7 +7,6 @@ import "./ContactForm.css";
 const ContactForm = () => {
   const [captchaToken, setCaptchaToken] = useState("");
   const onChange = (value) => {
-    console.log(value);
     setCaptchaToken(value);
   };
 
