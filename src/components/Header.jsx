@@ -80,7 +80,11 @@ function Header() {
             <li className="nav-list-item">
               <Link
                 to="/"
-                style={isTransparent ? { color: "var(--text-3)" } : null}
+                style={
+                  isTransparent && !activateSideMenu
+                    ? { color: "var(--text-3)" }
+                    : null
+                }
               >
                 Accueil
               </Link>
@@ -90,7 +94,11 @@ function Header() {
                 href="https://www.airbnb.fr/users/479186120/listings"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={isTransparent ? { color: "var(--text-3)" } : null}
+                style={
+                  isTransparent && !activateSideMenu
+                    ? { color: "var(--text-3)" }
+                    : null
+                }
               >
                 Nos Locations
               </a>
@@ -99,7 +107,11 @@ function Header() {
             <li className="nav-list-item">
               <Link
                 to="/contact"
-                style={isTransparent ? { color: "var(--text-3)" } : null}
+                style={
+                  isTransparent && !activateSideMenu
+                    ? { color: "var(--text-3)" }
+                    : null
+                }
               >
                 Déléguez la gestion de votre bien
               </Link>
@@ -108,7 +120,11 @@ function Header() {
             <li className="nav-list-item">
               <Link
                 to="/about"
-                style={isTransparent ? { color: "var(--text-3)" } : null}
+                style={
+                  isTransparent && !activateSideMenu
+                    ? { color: "var(--text-3)" }
+                    : null
+                }
               >
                 Qui sommes nous ?
               </Link>
