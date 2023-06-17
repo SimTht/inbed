@@ -22,8 +22,8 @@ const Home = () => {
       );
     }, 5000);
 
-    return () => clearTimeout(timeout);
-  }, [currentCarrouselIndex]);
+    return () => clearInterval(timeout);
+  }, [currentCarrouselIndex, carrouselPaths.length]);
 
   return (
     <main>
