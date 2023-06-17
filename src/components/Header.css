@@ -12,7 +12,7 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
-header div {
+header .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
