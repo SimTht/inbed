@@ -61,7 +61,7 @@ header * {
   padding: 0.5rem 1rem;
 }
 
-.nav-list-item:hover * {
+.nav-list-item a:hover {
   color: var(--text-4);
 }
 
@@ -96,7 +96,7 @@ header * {
   background-color: var(--main-2);
 }
 
-.side-menu ul li {
+.side-menu li {
   margin-bottom: 1rem;
 }
 
