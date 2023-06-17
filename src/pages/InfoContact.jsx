@@ -75,7 +75,7 @@ const InfoContact = () => {
           </div>
           <img src={airbnbPhone} alt="airbnb_smartphone" className="right" />
         </div>
-        <a href="#contact-form" className="btn">
+        <a href="#anchor-form" className="btn">
           Contactez Inbed dès maintenant
         </a>
       </section>
@@ -239,7 +239,15 @@ const InfoContact = () => {
             (37150).
           </p>
         </div>
-        <h2 className="container" id="contact-form">
+        <h2 className="container">
+          <div
+            id="anchor-form"
+            style={{
+              position: "absolute",
+              top: "-5rem",
+              left: "0",
+            }}
+          ></div>
           Demandez <strong>gratuitement</strong> votre estimation de revenus
           locatifs
         </h2>

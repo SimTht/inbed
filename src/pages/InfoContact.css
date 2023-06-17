@@ -132,6 +132,7 @@
 }
 
 .contact-form-section h2 {
+  position: relative;
   margin: 0 auto 2rem;
 }
 

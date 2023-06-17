@@ -6,7 +6,7 @@ const ScrollTo = ({ children }) => {
 
   useEffect(() => {
     if (locationScroll.hash === "#form") {
-      const form = document.getElementById("contact-form");
+      const form = document.getElementById("anchor-form");
       window.scrollTo(0, 0);
       form.scrollIntoView({
         behavior: "smooth",
