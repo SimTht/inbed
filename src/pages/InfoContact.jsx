@@ -118,7 +118,7 @@ const InfoContact = () => {
                 {" "}
                 Notre personnel<strong>Inbed</strong>accompagne les voyageurs
                 tout au long de leur séjour dans votre{" "}
-                <Link to="/contact#form" href="#formulaire_contact">
+                <Link to="/contact#form">
                   location Airbnb à Tours et Amboise.
                 </Link>
                 <br />
